@@ -9,22 +9,63 @@ body{
 .header-class{
     display: flex;
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 2rem;
     align-items: center;
     margin-top: 3rem;
     
 }
 
 .main-content-div{
+   display: flex;
+    flex-direction: column;
+    width: 23.5vw;
+    text-align: left;
+    height: 31rem;
+    background: rgb(211, 199, 199);
+    padding: 11px;
+    
+    
+}
+.commentimg{
+    width: 10px;
+    height: 15px;
+}
+.commenttime{
+    list-style: circle;
+}
+.div-image-footer{
     display: flex;
-    flex-direction: column ;
-    width: 20vw;
-    text-align: center;
+    column-gap: 0.5rem;
+}
+
+.comment{
+display: flex;
+column-gap: 2rem;
+}
+
+.clr-grey{
+    color: rgb(168, 156, 156);
+    font-size: 1.5rem;
+}
+
+.all-font{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.main-content-div2{
+        background: white;
+    height: 30rem;
+    width: 22vw;
 }
 
 .img-class{
-    width: 350px;
+    width: 334px;
     position: relative;
+}
+
+.fonth4{
+    color: red;
 }
 
 .date-class{
@@ -36,8 +77,9 @@ body{
     border-radius: 50%;
     text-align: center;
     position:relative;
-    top:-12rem;
-    left: 19rem;
+    top:-11rem;
+    font-weight: 700;
+    left: 18rem;
 }
 
 .allcontain-class{
@@ -55,8 +97,8 @@ body{
     
     text-align: center;
     position:relative;
-    top:-5.3rem;
-    left:1rem;
+    top:-5rem;
+    left:rem;
 }
 
 .img-main{
@@ -65,7 +107,41 @@ body{
 }
     
 .content-main{
-   margin-left: 2rem;
-        width: 20vw;
+      margin-left: 2rem;
+    width: 20vw;
     height: 15vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+
+   /* Reset css rule */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
 }

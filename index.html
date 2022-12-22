@@ -16,8 +16,8 @@
       function Uihead() {
         return (
           <div className="header-class">
-            <h1>All Articles</h1>
-            <h3>Collection of best articles on startups</h3>
+            <span className="all-font">All Articles</span>
+            <span className="clr-grey">Collection of best articles on startups</span>
           </div>
         );
       }
@@ -25,32 +25,37 @@
       function Uicontent(){
         return(
             <div className = "main-content-div">
+              <div className="main-content-div2">
                 <div className="img-main">
                      <img className = "img-class"src="./sahara-desert.jpg" alt=""/>
-                        <div className="date-class">27<br/>march</div>
+                        <div className="date-class">27<br/>mar</div>
                         <div className="photos-class">PHOTOS</div>
                     </div>
                
                     <div className = " content-main">
-                <h2>City lIght in New York</h2>
-                <h4>The city that never sleeps.</h4>
+                <h2>City light in New York</h2>
+                <h4 className="fonth4">The city that never sleeps.</h4>
                 <div className = "content-info">
                     New York, the largest city in the U.S.. is an architectural marvel with
                     plenty of historical monuments, magnificent buildings and countless
-                    dazzling skyscapers
+                    dazzling skyscapers.
                     </div>
-                    <div>
-                        <span>6 min ago</span>
-                        <span>39 comments</span>
+                    <div className="comment">
+                        <div className="commenttime"> <li> 6 min ago</li></div>
+                        <div className = "div-image-footer">
+                          <img className="commentimg"src="https://cdn-icons-png.flaticon.com/512/2076/2076246.png" alt=""/>
+                          <span>39 comments</span>
+                          
+                          </div>
                         </div>
                         </div>
-                
+                </div>
                 </div>
         )
       }
       function App() {
         return (
-            <div>
+            <div className = "main-class">
                   <Uihead />
                   <div className = "allcontain-class">
                     <Uicontent/>
