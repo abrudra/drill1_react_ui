@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI witout React</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Uihead() {
+        return (
+          <div className="header-class">
+            <h1>All Articles</h1>
+            <h3>Collection of best articles on startups</h3>
+          </div>
+        );
+      }
+
+      function Uicontent(){
+        return(
+            <div className = "main-content-div">
+                <div className="img-main">
+                     <img className = "img-class"src="./sahara-desert.jpg" alt=""/>
+                        <div className="date-class">27<br/>march</div>
+                        <div className="photos-class">PHOTOS</div>
+                    </div>
+               
+                    <div className = " content-main">
+                <h2>City lIght in New York</h2>
+                <h4>The city that never sleeps.</h4>
+                <div className = "content-info">
+                    New York, the largest city in the U.S.. is an architectural marvel with
+                    plenty of historical monuments, magnificent buildings and countless
+                    dazzling skyscapers
+                    </div>
+                    <div>
+                        <span>6 min ago</span>
+                        <span>39 comments</span>
+                        </div>
+                        </div>
+                
+                </div>
+        )
+      }
+      function App() {
+        return (
+            <div>
+                  <Uihead />
+                  <div className = "allcontain-class">
+                    <Uicontent/>
+                    <Uicontent/>
+                    <Uicontent/>
+                </div>
+                
+                </div>
+          
+           
+        ) 
+        
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
